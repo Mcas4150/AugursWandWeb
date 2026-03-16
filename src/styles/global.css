@@ -57,13 +57,6 @@ body {
   display: inline-block;
 }
 
-.header-title:hover {
-  background: var(--spectrum);
-  background-size: 200% 100%;
-  animation: spectrum-flow 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .subtext {
   font-size: 1.1rem;
