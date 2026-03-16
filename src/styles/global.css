@@ -72,6 +72,11 @@ body {
   padding: 0 4px;
   position: relative;
   display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.color-link:hover {
+  opacity: 0.8;
 }
 
 .color-link::after {
@@ -84,25 +89,6 @@ body {
   background: var(--spectrum);
   background-size: 200% 100%;
   animation: spectrum-flow 4s linear infinite;
-}
-
-@media (hover: hover) {
-  .color-link {
-    transition: all 0.2s ease;
-    border-bottom: 1px solid #555;
-  }
-
-  .color-link::after {
-    display: none;
-  }
-
-  .color-link:hover {
-    background: var(--spectrum);
-    background-size: 200% 100%;
-    animation: spectrum-flow 2s linear infinite;
-    color: #000;
-    border-bottom: none;
-  }
 }
 
 .diagram-container {
