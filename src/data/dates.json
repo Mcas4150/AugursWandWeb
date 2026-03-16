@@ -1,0 +1,51 @@
+[
+  {
+    "event": "ELEKTRA Festival",
+    "date": "June 18, 2025",
+    "location": "Montreal, Canada",
+    "link": "https://www.elektramontreal.ca/festival-2025",
+    "description": "Augurs Wand Live"
+  },
+  {
+    "event": "La Grande Nuit",
+    "date": "March 1, 2025",
+    "location": "Montreal, Canada",
+    "link": "https://smcq.qc.ca/smcq/fr/evenement/46749-la-grande-nuit-2025",
+    "description": "Third State presented"
+  },
+  {
+    "event": "Hexagram",
+    "date": "January 23-30, 2025",
+    "location": "Montreal, Canada",
+    "link": "https://hexagram.ca/fr/demo58-mike-cassidy-and-kristian-north-third-state/",
+    "description": "Artists in Residence"
+  },
+  {
+    "event": "Signal Culture",
+    "date": "November 13-19, 2024",
+    "location": "Loveland, USA",
+    "link": "https://signalculture.org/",
+    "description": "Toolmaker and Researcher in Residence"
+  },
+  {
+    "event": "Lawnya Vawnya",
+    "date": "June 8, 2024",
+    "location": "St. John's, Canada",
+    "link": "https://www.lawnyavawnya.com/event-details-registration/workshop-augurs-wand-laser-synth-demonstration",
+    "description": "Laser Synth workshop"
+  },
+  {
+    "event": "Lawnya Vawnya",
+    "date": "June 7, 2024",
+    "location": "St. John's, Canada",
+    "link": "https://www.lawnyavawnya.com/",
+    "description": "Augurs Wand Live"
+  },
+  {
+    "event": "Midfield",
+    "date": "October 23, 2023",
+    "location": "Montreal, Canada",
+    "link": "https://youtu.be/TrDYkVKS-2Y?si=YCygGzI1H1Y3oyLU",
+    "description": "Augurs Wand Live"
+  }
+]

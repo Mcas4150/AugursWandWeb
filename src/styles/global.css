@@ -1,0 +1,123 @@
+:root {
+  --bg: #000000;
+  --text-main: #ffffff;
+  --text-dim: #888888;
+  --spectrum: linear-gradient(
+    to right,
+    #ff0000 0%,
+    #ffff00 17%,
+    #00ff00 33%,
+    #00ffff 50%,
+    #0000ff 67%,
+    #ff00ff 83%,
+    #ff0000 100%
+  );
+}
+
+@keyframes spectrum-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.augurs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.subhead {
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease;
+  cursor: default;
+  display: inline-block;
+}
+
+.header-title:hover {
+  background: var(--spectrum);
+  background-size: 200% 100%;
+  animation: spectrum-flow 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  font-size: 1.1rem;
+}
+
+.subtext p {
+  margin-bottom: 1.5rem;
+}
+
+.color-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+  transition: all 0.2s ease;
+  padding: 0 4px;
+}
+
+.color-link:hover {
+  background: var(--spectrum);
+  background-size: 200% 100%;
+  animation: spectrum-flow 2s linear infinite;
+  color: #000;
+  border-bottom-color: transparent;
+}
+
+.diagram-container {
+  margin: 3rem 0;
+  border: 1px solid #222;
+  background: #000;
+  line-height: 0;
+}
+
+.diagram-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(1) contrast(1.1);
+  transition: filter 0.5s ease;
+}
+
+.diagram-container:hover .diagram-image {
+  filter: grayscale(0) contrast(1);
+}
+
+.tour-date-item {
+  margin-bottom: 0.8rem;
+}
+
+.location-text {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+i {
+  color: var(--text-dim);
+}
