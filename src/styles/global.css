@@ -79,16 +79,17 @@ body {
   opacity: 0.8;
 }
 
-.color-link::after {
+.spectrum-underline {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--spectrum);
   background-size: 200% 100%;
   animation: spectrum-flow 4s linear infinite;
+  pointer-events: none;
 }
 
 .diagram-container {

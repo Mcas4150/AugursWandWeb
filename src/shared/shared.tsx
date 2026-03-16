@@ -1,15 +1,20 @@
 import React from 'react';
 
-export const ColorLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="color-link"
-  >
-    {children}
-  </a>
-);
+export const ColorLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+  const randomDelay = React.useMemo(() => `-${Math.random() * 4}s`, []);
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="color-link"
+    >
+      {children}
+      <span className="spectrum-underline" style={{ animationDelay: randomDelay }} />
+    </a>
+  );
+};
 
 export const Subtext = ({ children }: { children: React.ReactNode }) => (
   <div className="subtext">{children}</div>
