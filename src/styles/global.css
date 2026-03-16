@@ -104,17 +104,6 @@ body {
   height: auto;
   display: block;
   filter: grayscale(0) contrast(1);
-  transition: filter 0.5s ease;
-}
-
-@media (hover: hover) {
-  .diagram-image {
-    filter: grayscale(1) contrast(1.1);
-  }
-
-  .diagram-container:hover .diagram-image {
-    filter: grayscale(0) contrast(1);
-  }
 }
 
 .tour-date-item {

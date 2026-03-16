@@ -2,7 +2,7 @@ import React from "react";
 import { ColorLink, Subtext, Subhead, HeaderTitle, DiagramImage, TourDate } from "./shared/shared";
 import tourDates from "./data/dates.json";
 
-const Augurs = "/imgs/AugursWand4.jpg";
+const Augurs = "/imgs/LaserPhoto.jpg";
 
 export default function AugursWand() {
   return (
