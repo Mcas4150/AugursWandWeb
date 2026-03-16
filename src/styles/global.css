@@ -69,17 +69,40 @@ body {
 .color-link {
   color: #fff;
   text-decoration: none;
-  border-bottom: 1px solid #555;
-  transition: all 0.2s ease;
   padding: 0 4px;
+  position: relative;
+  display: inline-block;
 }
 
-.color-link:hover {
+.color-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
   background: var(--spectrum);
   background-size: 200% 100%;
-  animation: spectrum-flow 2s linear infinite;
-  color: #000;
-  border-bottom-color: transparent;
+  animation: spectrum-flow 4s linear infinite;
+}
+
+@media (hover: hover) {
+  .color-link {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #555;
+  }
+
+  .color-link::after {
+    display: none;
+  }
+
+  .color-link:hover {
+    background: var(--spectrum);
+    background-size: 200% 100%;
+    animation: spectrum-flow 2s linear infinite;
+    color: #000;
+    border-bottom: none;
+  }
 }
 
 .diagram-container {
