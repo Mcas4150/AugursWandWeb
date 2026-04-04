@@ -1,5 +1,26 @@
 [
   {
+    "event": "NIME",
+    "date": "June, 2026",
+    "location": "London, UK",
+    "link": "",
+    "description": "Live"
+  },
+    {
+    "event": "Bloback Gallery",
+    "date": "May 30, 2026",
+    "location": "Pueblo, USA",
+    "link": "",
+    "description": "Live"
+  },
+  {
+    "event": "LEAF Festival",
+    "date": "May 29, 2026",
+    "location": "Lafayette, USA",
+    "link": "",
+    "description": "Live"
+  },
+  {
     "event": "Hexagram",
     "date": "May 7, 2026",
     "location": "Montreal, Canada",
